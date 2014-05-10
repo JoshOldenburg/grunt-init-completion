@@ -1,0 +1,23 @@
+{
+  "name": "grunt-init-completion",
+  "version": "0.1.0",
+  "description": "Supplement to grunt-init to add bash completion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoshTheGeek/grunt-init-completion.git"
+  },
+  "keywords": [
+    "grunt",
+    "grunt-init"
+  ],
+  "author": "Josh Oldenburg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshTheGeek/grunt-init-completion/issues"
+  },
+  "homepage": "https://github.com/JoshTheGeek/grunt-init-completion"
+}
