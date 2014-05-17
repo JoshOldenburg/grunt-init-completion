@@ -13,6 +13,16 @@ if (process.argv.indexOf('completion') !== -1 && process.argv.indexOf('--') === 
 	process.argv.push('grunt-init-completion');
 }
 
+tab()
+	('--help', '-h')
+	('--no-color')
+	('--debug', '-d')
+	('--stack')
+	('--force', '-f')
+	('--no-write')
+	('--verbose', '-v')
+	('--version', '-V')
+
 fs.readdir(path.join(homedir), function(err, files) {
 	if (err) process.exit(2);
 
