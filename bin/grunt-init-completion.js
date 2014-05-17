@@ -23,16 +23,21 @@ tab()
 	('--verbose', '-v')
 	('--version', '-V')
 
-fs.readdir(path.join(homedir), function(err, files) {
-	if (err) process.exit(2);
+	(function(callback) {
+		fs.readdir(path.join(homedir), function(err, files) {
+			if (err) callback(err);
 
-	files = files.filter(function(file) {
-		return fs.statSync(path.join(homedir, file)).isDirectory();
-	});
+			files = files.filter(function(file) {
+				return fs.statSync(path.join(homedir, file)).isDirectory();
+			});
 
-	files.forEach(function(file) {
-		tab(file)(noop);
-	});
+			if (files.length) return callback(null, files, {
+				exitCode:15,
+			});
 
-	tab.parse();
-});
+			callback();
+		});
+	})
+	(noop)
+
+tab.parse();
