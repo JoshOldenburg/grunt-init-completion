@@ -1,13 +1,9 @@
 {
   "name": "grunt-init-completion",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Supplement to grunt-init to add bash completion.",
-  "main": "index.js",
   "bin": {
     "grunt-init-completion": "./bin/grunt-init-completion.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
