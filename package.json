@@ -1,6 +1,6 @@
 {
   "name": "grunt-init-completion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Supplement to grunt-init to add bash completion.",
   "bin": {
     "grunt-init-completion": "./bin/grunt-init-completion.js"
